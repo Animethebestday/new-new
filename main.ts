@@ -1,7 +1,77 @@
-scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairSouth, function (sprite, location) {
-    game.over(true)
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonPink, function (sprite, location) {
+    game.over(false)
 })
-let mySprite = sprites.create(img`
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairNorth, function (sprite, location) {
+    if (true) {
+        tiles.setTilemap(tilemap`level6`)
+        tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairLadder)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles0, function (sprite, location) {
+    game.over(true, effects.slash)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardLava0, function (sprite, location) {
+    game.over(false)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenEast, function (sprite, location) {
+    if (true) {
+        tiles.setTilemap(tilemap`level14`)
+        tiles.placeOnRandomTile(mySprite, sprites.castle.tileDarkGrass2)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorClosedNorth, function (sprite, location) {
+    if (true) {
+        tiles.setTilemap(tilemap`level10`)
+        tiles.placeOnRandomTile(mySprite, sprites.castle.tilePath4)
+    }
+})
+function startNextLevel () {
+    if (true) {
+        tiles.setTilemap(tilemap`level2`)
+        tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairWest)
+    } else if (true) {
+        tiles.setTilemap(tilemap`level6`)
+        tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairLadder)
+    } else if (true) {
+        tiles.setTilemap(tilemap`level8`)
+        tiles.placeOnRandomTile(mySprite, sprites.builtin.forestTiles9)
+    } else if (true) {
+        tiles.setTilemap(tilemap`level10`)
+        tiles.placeOnRandomTile(mySprite, sprites.castle.tilePath4)
+    } else if (true) {
+        tiles.setTilemap(tilemap`level12`)
+        tiles.placeOnRandomTile(mySprite, sprites.dungeon.hazardLava0)
+    } else if (true) {
+        tiles.setTilemap(tilemap`level14`)
+        tiles.placeOnRandomTile(mySprite, sprites.castle.tileDarkGrass2)
+    }
+}
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrangeDepressed, function (sprite, location) {
+    game.over(false)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.tileGrass2, function (sprite, location) {
+    if (true) {
+        tiles.setTilemap(tilemap`level6`)
+        tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairLadder)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenWest, function (sprite, location) {
+    if (true) {
+        tiles.setTilemap(tilemap`level12`)
+        tiles.placeOnRandomTile(mySprite, sprites.dungeon.hazardLava0)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenNorth, function (sprite, location) {
+    if (true) {
+        tiles.setTilemap(tilemap`level8`)
+        tiles.placeOnRandomTile(mySprite, sprites.builtin.forestTiles9)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairSouth, function (sprite, location) {
+    startNextLevel()
+})
+let mySprite: Sprite = null
+mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . f f f f f f f f . . . . 
@@ -22,5 +92,5 @@ let mySprite = sprites.create(img`
 controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
 tiles.setTilemap(tilemap`level1`)
-tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairLarge)
-info.startCountdown(14)
+tiles.placeOnRandomTile(mySprite, sprites.dungeon.floorLight2)
+info.startCountdown(30)
