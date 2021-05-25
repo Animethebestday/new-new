@@ -8,7 +8,10 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairNorth, function (spr
     }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles0, function (sprite, location) {
-    game.over(true, effects.slash)
+    if (true) {
+        tiles.setTilemap(tilemap`level17`)
+        tiles.placeOnRandomTile(mySprite, sprites.castle.rock0)
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardLava0, function (sprite, location) {
     game.over(false)
@@ -44,10 +47,19 @@ function startNextLevel () {
     } else if (true) {
         tiles.setTilemap(tilemap`level14`)
         tiles.placeOnRandomTile(mySprite, sprites.castle.tileDarkGrass2)
+    } else {
+        tiles.setTilemap(tilemap`level17`)
+        tiles.placeOnRandomTile(mySprite, sprites.builtin.forestTiles0)
     }
 }
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.darkGroundCenter, function (sprite, location) {
+    game.over(true, effects.blizzard)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrangeDepressed, function (sprite, location) {
     game.over(false)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.builtin.coral0, function (sprite, location) {
+    game.over(true, effects.hearts)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.tileGrass2, function (sprite, location) {
     if (true) {
@@ -55,10 +67,13 @@ scene.onOverlapTile(SpriteKind.Player, sprites.castle.tileGrass2, function (spri
         tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairLadder)
     }
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.floorLight3, function (sprite, location) {
+    game.over(true, effects.starField)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenWest, function (sprite, location) {
     if (true) {
         tiles.setTilemap(tilemap`level12`)
-        tiles.placeOnRandomTile(mySprite, sprites.dungeon.hazardLava0)
+        tiles.placeOnRandomTile(mySprite, sprites.castle.tilePath5)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenNorth, function (sprite, location) {
@@ -66,6 +81,9 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenNorth, function (
         tiles.setTilemap(tilemap`level8`)
         tiles.placeOnRandomTile(mySprite, sprites.builtin.forestTiles9)
     }
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, function (sprite, location) {
+    game.over(true, effects.splatter)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairSouth, function (sprite, location) {
     startNextLevel()
