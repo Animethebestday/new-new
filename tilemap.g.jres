@@ -144,27 +144,6 @@
         ],
         "displayName": "level13"
     },
-    "level14": {
-        "id": "level14",
-        "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxMDAwMTAwMDAxMDcwNzA3MDcwNzA3MDcwNzA3MDcwNzA3MDcwNzA4MDIwYjA5MGIwOTBiMGIwYjA5MGIwOTBiMDkwOTA5MDYwMjBiMGIwYjA5MGIwOTBiMDkwYjA5MGIwOTA5MDkwNjAyMDkwOTBiMDkwYjA5MGIwOTBiMDkwYjA5MDkwOTA2MDIwYjBiMGIwOTBiMGIwYjA5MGIwYjBiMDkwOTA5MDYwMjA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwNjAyMDkwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwYTBhMGMwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwOTBhMGEwYzA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MGEwYTBjMDkwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwYTBhMDIwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwOTBhMGEwMjA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwNjAyMGIwOTA5MDkwYjA5MGIwOTBiMGIwOTBiMDkwOTA2MDIwYjA5MGIwOTBiMDkwYjA5MGIwOTBiMGIwOTA5MDYwMjBiMGIwOTBiMGIwOTBiMDkwYjA5MDkwYjA5MDkwNjAzMGIwOTA5MDkwYjA0MGIwNDBiMDQwOTBiMDQwNDA1MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
-        "tileset": [
-            "myTiles.transparency16",
-            "sprites.castle.tilePath1",
-            "sprites.castle.tilePath4",
-            "sprites.castle.tilePath7",
-            "sprites.castle.tilePath8",
-            "sprites.castle.tilePath9",
-            "sprites.castle.tilePath6",
-            "sprites.castle.tilePath2",
-            "sprites.castle.tilePath3",
-            "sprites.castle.tilePath5",
-            "sprites.builtin.forestTiles0",
-            "sprites.swamp.swampTile0",
-            "sprites.castle.tileDarkGrass2"
-        ],
-        "displayName": "level14"
-    },
     "level15": {
         "id": "level15",
         "mimeType": "application/mkcd-tilemap",
@@ -262,6 +241,34 @@
             "sprites.castle.rock0"
         ],
         "displayName": "level17"
+    },
+    "level14": {
+        "id": "level14",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAxMDcwNzA3MDcwNzA3MDcwNzA3MDcwNzA3MDcwNzA4MDIwOTA5MDkwZjBkMGQwZDBkMGQwZDBkMTEwOTA5MDYwMjA5MDkwOTBmMDkwOTA5MDkwOTA5MDkwZjA5MDkwNjAyMDkwOTA5MTMwOTA5MDkwOTA5MDkwOTBmMDkwOTA2MDIwOTA5MDkxMzA5MDkwOTA5MDkwOTA5MTIwOTA5MDYwMjA5MDkwOTBmMDkwOTA5MDkwOTA5MDkxMjA5MDkwNjBkMGQwZDBkMGYwOTA5MDkwOTA5MDkwOTBmMDkwYTBhMGMwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MGYwOTBhMGEwYzA5MDkwOTA5MTAxMDEwMTAxMDEwMTAwZTA5MGEwYTBjMDkwOTA5MDkwZjA5MDkwOTA5MDkwOTA5MDkwYTBhMTAxMDEwMTAxMDBlMDkwOTA5MDkwOTA5MDkwOTBhMGEwMjA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwNjAyMGIwOTA5MDkwYjA5MGIwOTBiMGIwOTBiMDkwOTA2MDIwYjA5MGIwOTBiMDkwYjA5MGIwOTBiMGIwOTA5MDYwMjBiMGIwOTBiMGIwOTBiMDkwYjA5MDkwYjA5MDkwNjAzMGIwOTA5MDkwYjA0MGIwNDBiMDQwOTBiMDQwNDA1MDAwMDAwMDAwMDAwMDAwMDAwMDAyMjIyMjIyMjAyMDAwMDAwMDIwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDIwMDAwMDAwMjAwMjIyMjAyMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMjAyMjIyMjIwMjAwMDAwMDIwMDAwMDAwMDAwMDIyMjIyMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.castle.tilePath1",
+            "sprites.castle.tilePath4",
+            "sprites.castle.tilePath7",
+            "sprites.castle.tilePath8",
+            "sprites.castle.tilePath9",
+            "sprites.castle.tilePath6",
+            "sprites.castle.tilePath2",
+            "sprites.castle.tilePath3",
+            "sprites.castle.tilePath5",
+            "sprites.builtin.forestTiles0",
+            "sprites.swamp.swampTile0",
+            "sprites.castle.tileDarkGrass2",
+            "sprites.dungeon.greenOuterNorth0",
+            "sprites.dungeon.greenOuterSouthWest",
+            "sprites.dungeon.greenOuterEast1",
+            "sprites.dungeon.greenOuterSouth0",
+            "sprites.dungeon.greenOuterNorthEast",
+            "sprites.dungeon.purpleOuterEast2",
+            "sprites.dungeon.purpleOuterWest2"
+        ],
+        "displayName": "level14"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",

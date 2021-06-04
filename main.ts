@@ -7,6 +7,9 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairNorth, function (spr
         tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairLadder)
     }
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.purpleOuterEast2, function (sprite, location) {
+    game.over(false)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles0, function (sprite, location) {
     if (true) {
         tiles.setTilemap(tilemap`level17`)
