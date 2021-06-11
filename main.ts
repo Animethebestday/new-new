@@ -8,10 +8,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairNorth, function (spr
     }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.floorLightMoss, function (sprite, location) {
-    game.over(true, effects.hearts)
-})
-scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.purpleOuterEast2, function (sprite, location) {
-    game.over(false)
+    game.over(true, effects.melt)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles0, function (sprite, location) {
     if (true) {
@@ -20,6 +17,9 @@ scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles0, function (s
     }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardLava0, function (sprite, location) {
+    game.over(false)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.purpleOuterWest2, function (sprite, location) {
     game.over(false)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenEast, function (sprite, location) {
