@@ -7,6 +7,9 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairNorth, function (spr
         tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairLadder)
     }
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.floorLightMoss, function (sprite, location) {
+    game.over(true, effects.hearts)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.purpleOuterEast2, function (sprite, location) {
     game.over(false)
 })
@@ -31,6 +34,9 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorClosedNorth, function
         tiles.placeOnRandomTile(mySprite, sprites.castle.tilePath4)
     }
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.vehicle.roadVertical, function (sprite, location) {
+    game.over(true, effects.blizzard)
+})
 function startNextLevel () {
     if (true) {
         tiles.setTilemap(tilemap`level2`)
@@ -50,14 +56,14 @@ function startNextLevel () {
     } else if (true) {
         tiles.setTilemap(tilemap`level14`)
         tiles.placeOnRandomTile(mySprite, sprites.castle.tileDarkGrass2)
-    } else {
+    } else if (true) {
         tiles.setTilemap(tilemap`level17`)
         tiles.placeOnRandomTile(mySprite, sprites.builtin.forestTiles0)
+    } else {
+        tiles.setTilemap(tilemap`level19`)
+        tiles.placeOnRandomTile(mySprite, sprites.dungeon.collectibleInsignia)
     }
 }
-scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.darkGroundCenter, function (sprite, location) {
-    game.over(true, effects.blizzard)
-})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrangeDepressed, function (sprite, location) {
     game.over(false)
 })
@@ -86,7 +92,10 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenNorth, function (
     }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, function (sprite, location) {
-    game.over(true, effects.splatter)
+    if (true) {
+        tiles.setTilemap(tilemap`level19`)
+        tiles.placeOnRandomTile(mySprite, sprites.castle.saplingOak)
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairSouth, function (sprite, location) {
     startNextLevel()
@@ -114,4 +123,7 @@ controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
 tiles.setTilemap(tilemap`level1`)
 tiles.placeOnRandomTile(mySprite, sprites.dungeon.floorLight2)
-info.startCountdown(30)
+info.startCountdown(40)
+forever(function () {
+    music.playMelody("A G A B A G A B ", 120)
+})
