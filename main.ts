@@ -8,7 +8,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairNorth, function (spr
     }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.floorLightMoss, function (sprite, location) {
-    game.over(true, effects.melt)
+    game.over(true, effects.clouds)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles0, function (sprite, location) {
     if (true) {
@@ -126,4 +126,5 @@ tiles.placeOnRandomTile(mySprite, sprites.dungeon.floorLight2)
 info.startCountdown(40)
 forever(function () {
     music.playMelody("A G A B A G A B ", 120)
+    music.playMelody("F D F D G F D G ", 120)
 })
